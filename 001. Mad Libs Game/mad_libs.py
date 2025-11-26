@@ -52,7 +52,7 @@ while True:
     story = mad_libs()
     print(story)
 
-    save_file = input('Do you want to save the story as a file?(y/n) ').lower()
+    save_file = input('Do you want to save the story as a file?(y/n) ').lower().strip()
     while save_file not in ['y', 'n', 'yes', 'no']:
         save_file = input('Please enter yes or no: ')
     if save_file in ['y', 'yes']:
@@ -62,7 +62,7 @@ while True:
     else:
         print('Story not saved.')
 
-    user_response = input('Do you want to Go Mad Again?(y/n): ').lower()
+    user_response = input('Do you want to Go Mad Again?(y/n): ').lower().strip()
     while user_response not in ['y', 'n', 'yes', 'no']:
         user_response = input('Please type y or n: ')
     if user_response not in ['y', 'yes']:
