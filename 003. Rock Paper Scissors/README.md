@@ -50,7 +50,7 @@ The computer randomly chooses a move each round, and you try to beat it. The gam
 2. Clone the repository:
 
    ```
-   git clone <your-repo-link>
+   git clone https://github.com/emmaibu/python-mastery/tree/main/003.%20Rock%20Paper%20Scissors
    ```
 3. Navigate to the folder:
 
