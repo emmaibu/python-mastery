@@ -13,17 +13,17 @@ table.add_column("Result", style="magenta")
 
 features = """[purple]PyCalc Ultra v1[/purple]
 [bright_cyan]Features[/bright_cyan]
-[grey74]- Performs basic operations (+, -, *, /, **]
+[grey74]- Performs basic operations (+, -, *, /, **, python math functions, e.t.c)
 - Storage and access to history which can also be cleared.
 - can perfom operations using the python math module e.g math.log10(100)
-- Enter h to check history • enter q to quit • enter f to check the calculator features.[/grey74]"""
+- Enter 'h' to check history • enter 'q' to quit • enter 'f' to check the calculator features.[/grey74]"""
 
 print("""[blue]
 ┌─────────────────────────────────────┐
 │          PyCalc Ultra v1            │
 └─────────────────────────────────────┘
 [/blue]
-[grey74]Enter h to check history • enter q to quit • enter f to check the calculator features.[/grey74]
+[grey74]Enter 'h' to check history • enter 'q' to quit • enter 'f' to check the calculator features.[/grey74]
 """)
 print("[bright_cyan]Start calculating[/bright_cyan]")
 
@@ -45,12 +45,12 @@ while True:
             print(f"[bright_green]= {result}[/bright_green]")
             table.add_row(expression, str(result))
             continue
-        except (ZeroDivisionError, SyntaxError, NameError):
+        except (ZeroDivisionError, SyntaxError, NameError, TypeError):
             print('[yellow]Invalid Syntax.[/yellow]')
             continue
     
     
-for step in track(range(5), description='Exiting...'): 
-    time.sleep(0.1)
+for step in track(range(5), description='[red]Shuting down calculator...[/red].'): 
+    time.sleep(0.2)
 
-print('Bye!')
+print('[yellow]Calculator Ofline[/yellow]')
