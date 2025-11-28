@@ -49,7 +49,6 @@ Do you want to analyze another text? (y/n):
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/text-analyzer.git
 cd text-analyzer
 ```
 
